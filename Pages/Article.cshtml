@@ -1,0 +1,43 @@
+﻿@page
+@model AtricalProject.Pages.ArticleModel
+@{
+}
+
+<section class="text-white bg-primary mb-0" id="about">
+    <div class="container">
+        <h2 class="text-uppercase text-center text-white" style="font-family: Cairo, sans-serif;">حول الموقع</h2>
+        <hr class="star-light mb-5">
+        <div class="row align-items-center">
+            <div class="col">
+                <p class="lead text-center" style="font-family: Cairo, sans-serif;">نحن نوفر لك الدعم الكامل لنشر مقالاتك ومشاركتها مع الاخرين . حيث ان موقع مقالتي يضمن لك كافة الحقوق للمقالات التي تنشرها&nbsp; على الموقع&nbsp;</p>
+            </div>
+        </div>
+        <div class="text-center mt-4"><a class="btn btn-outline-light btn-xl" role="button" href="#"><i class="fa fa-american-sign-language-interpreting me-2"></i><span style="font-family: Cairo, sans-serif;">اشترك الان وانضم معنا&nbsp;</span></a></div>
+    </div>
+</section>
+<section id="contact">
+    <div class="container">
+        <h2 class="text-uppercase text-center text-secondary mb-0" style="font-family: Cairo, sans-serif;">تواصل معنا&nbsp;</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                    <div class="control-group">
+                        <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="text" id="name" required="" placeholder="الاسم" style="font-family: Cairo, sans-serif;"><label class="form-label">Name</label><small class="form-text text-danger help-block"></small></div>
+                    </div>
+                    <div class="control-group">
+                        <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="email" id="email" required="" placeholder="Email Address" style="font-family: Cairo, sans-serif;"><label class="form-label">Email Address</label><small class="form-text text-danger help-block"></small></div>
+                    </div>
+                    <div class="control-group">
+                        <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="tel" id="phone" required="" placeholder="Phone Number" style="font-family: Cairo, sans-serif;"><label class="form-label">Phone Number</label><small class="form-text text-danger help-block"></small></div>
+                    </div>
+                    <div class="control-group">
+                        <div class="mb-5 form-floating controls pb-2"><textarea class="form-control" id="message" required="" placeholder="Message" style="height: 150px;font-family: Cairo, sans-serif;"></textarea><label class="form-label">Message</label><small class="form-text text-danger help-block"></small></div>
+                    </div>
+                    <div id="success"></div>
+                    <div><button class="btn btn-primary float-end btn-xl" id="sendMessageButton" type="submit" style="font-family: Cairo, sans-serif;">ارسل</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
